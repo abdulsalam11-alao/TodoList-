@@ -1,0 +1,169 @@
+/* :root {
+  --Bright-Blue: hsl(220, 98%, 61%);
+  --color: black;
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+  --Light-Grayish-Blue: hsl(233, 11%, 84%);
+}
+
+[dark-mode="dark"] {
+  --background-color: hsl(230, 17%, 14%);
+  --color: white;
+  --background-box: hsl(228, 28%, 20%);
+  --second-box: hsl(228, 28%, 20%);
+  --third-box: hsl(232, 19%, 15%);
+  --fourth-box: hsl(228, 28%, 20%);
+  --first-rectangle: hsl(228, 28%, 20%);
+  --second-rectangle: hsl(228, 28%, 20%);
+  --third-rectangle: hsl(232, 19%, 15%);
+  --fourth-rectangle: hsl(228, 28%, 20%);
+  --fifth-rectangle: hsl(228, 28%, 20%);
+  --sixth-rectangle: hsl(228, 28%, 20%);
+  --seventh-rectangle: hsl(228, 28%, 20%);
+  --eight-rectangle: hsl(228, 28%, 20%);
+} */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: hsl(235, 21%, 11%);
+  margin-bottom: 300px;
+}
+.App {
+  background-image: url(./images/bg-desktop-dark.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  position: relative;
+}
+.TodoList {
+  /* width: 500px;
+  margin-top: 10%; */
+  position: absolute;
+  top: 30%;
+  overflow-y: auto;
+}
+.Logo {
+  display: flex;
+  justify-content: space-between;
+}
+.Logo h1 {
+  letter-spacing: 10px;
+  color: hsl(236, 33%, 92%);
+}
+.Logo img {
+  height: 30px;
+}
+.circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid hsl(235, 19%, 35%);
+}
+.checkbox {
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid hsl(192, 100%, 67%);
+}
+.formInput {
+  display: flex;
+  background-color: hsl(235, 24%, 19%);
+  padding: 10px;
+  margin-top: 30px;
+}
+.formInput input {
+  background: transparent;
+  border: 0;
+  outline: 0;
+  margin-left: 10px;
+  color: hsl(234, 39%, 85%);
+  font-size: 17px;
+  width: 500px;
+}
+.main {
+  height: auto;
+  background-color: hsl(235, 24%, 19%);
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.List {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  padding: 10px;
+  color: hsl(234, 39%, 85%);
+  border-bottom: 1px solid hsl(236, 9%, 61%);
+}
+.List p {
+  margin-left: 10px;
+  font-size: 17px;
+}
+.iconCross {
+  width: 15px;
+  height: 15px;
+}
+.List div {
+  display: flex;
+  justify-content: center;
+}
+.Check {
+  width: 15px;
+  height: 15px;
+  margin: 2px;
+  border-radius: 10px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid hsl(235, 19%, 35%);
+}
+.active {
+  background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+.strike {
+  text-decoration: line-through;
+  color: hsl(235, 19%, 35%);
+}
+.List img {
+  width: 15px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+}
+.List p {
+  margin-left: 20px;
+}
+.Check:hover {
+  border: 1px solid hsl(192, 100%, 67%);
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  color: hsl(235, 19%, 35%);
+  padding: 20px 10px 20px 10px;
+  cursor: pointer;
+}
+.second {
+  display: flex;
+}
+.all {
+  color: hsl(220, 98%, 61%);
+}
+.second p {
+  margin: 0px 10px;
+}
+.footer p:hover {
+  color: white;
+}
+.activeBtn {
+  color: white;
+}
